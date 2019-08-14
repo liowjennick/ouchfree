@@ -23,6 +23,30 @@ li {
   padding-bottom: 42px;
 }
 
+.choose-a-plan-container {
+  padding-top: 54px;
+}
+.choose-a-plan-container .header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px;
+  background-color: #E94259;
+  display: flex;
+  align-items: center;
+  z-index: 10;
+}
+.choose-a-plan-container .header .header-text {
+  color: white;
+  flex-grow: 1;
+  font-weight: 600;
+}
+.choose-a-plan-container .header .header-close-button {
+  color: white;
+  font-weight: 900;
+}
+
 .yellow-border {
   width: 80px;
   margin: 20px auto;
@@ -180,25 +204,14 @@ li {
 .step-2 .benefit-section .benefit-item-card .benefit-price .total-cost-text {
   flex-grow: 1;
 }
-.step-2 .next-button-container {
-  padding: 0 20px;
-}
-.step-2 .next-button-container .next-button {
-  padding: 15px 20px;
-  background-color: #E94259;
-  color: white;
-  text-align: center;
-  border-radius: 10px;
-  font-weight: 700;
-}
 
-.step-3 form {
+.step-3 form, .step-4 form {
   padding: 0 20px;
 }
-.step-3 .radio-field-container {
+.step-3 .radio-field-container, .step-4 .radio-field-container {
   margin-bottom: 40px;
 }
-.step-3 .radio-field-container .radio-card {
+.step-3 .radio-field-container .radio-card, .step-4 .radio-field-container .radio-card {
   box-shadow: 0 0 15px 0 lightgray;
   position: relative;
   border-radius: 5px;
@@ -208,11 +221,11 @@ li {
   padding: 15px 20px;
   margin-bottom: 10px;
 }
-.step-3 .radio-field-container .radio-card h5 {
+.step-3 .radio-field-container .radio-card h5, .step-4 .radio-field-container .radio-card h5 {
   margin: 0;
   flex-grow: 1;
 }
-.step-3 .radio-field-container .radio-card input[type=radio] {
+.step-3 .radio-field-container .radio-card input[type=radio], .step-4 .radio-field-container .radio-card input[type=radio] {
   -webkit-appearance: none !important;
   width: 22px;
   height: 22px;
@@ -222,10 +235,10 @@ li {
   position: relative;
   outline: none;
 }
-.step-3 .radio-field-container .radio-card input[type=radio]:checked {
+.step-3 .radio-field-container .radio-card input[type=radio]:checked, .step-4 .radio-field-container .radio-card input[type=radio]:checked {
   outline: none;
 }
-.step-3 .radio-field-container .radio-card input[type=radio]:checked:after {
+.step-3 .radio-field-container .radio-card input[type=radio]:checked:after, .step-4 .radio-field-container .radio-card input[type=radio]:checked:after {
   content: "";
   background-color: #73EAB8;
   width: 14px;
@@ -236,13 +249,19 @@ li {
   transform: translate(-50%, -50%);
   border-radius: 50%;
 }
-.step-3 .form-field-container .form-name .small-text {
+.step-3 .form-field-container, .step-4 .form-field-container {
+  margin-bottom: 20px;
+}
+.step-3 .form-field-container .form-name, .step-4 .form-field-container .form-name {
+  margin-bottom: 5px;
+}
+.step-3 .form-field-container .form-name .small-text, .step-4 .form-field-container .form-name .small-text {
   font-weight: 100;
   font-size: 0.7em;
   margin-left: 5px;
   font-style: italic;
 }
-.step-3 .form-field-container .form-input-container input {
+.step-3 .form-field-container .form-input-container input, .step-4 .form-field-container .form-input-container input {
   background-color: #FAFAFA;
   outline: none;
   border-radius: 5px;
@@ -251,7 +270,57 @@ li {
   width: 100%;
   box-shadow: none;
   border: none;
-  padding: 10px;
+  padding: 10px 20px;
+  font-weight: 100;
+  margin-bottom: 5px;
+}
+.step-3 .gender-field-container, .step-4 .gender-field-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.step-3 .gender-field-container .button-container, .step-4 .gender-field-container .button-container {
+  margin-left: 20px;
+}
+.step-3 .gender-field-container .button-container input[type=radio], .step-4 .gender-field-container .button-container input[type=radio] {
+  display: none;
+}
+.step-3 .gender-field-container .button-container input[type=radio]:checked + label, .step-4 .gender-field-container .button-container input[type=radio]:checked + label {
+  background-color: #73EAB8;
+  color: white;
+}
+.step-3 .gender-field-container .button-container label, .step-4 .gender-field-container .button-container label {
+  border: 2px solid #73EAB8;
+  padding: 10px 20px;
+  border-radius: 20px;
+  color: #73EAB8;
+  text-align: center;
+  margin: 5px;
+  background-color: white;
+  cursor: pointer;
+}
+
+.next-button-container {
+  padding: 0 20px;
+}
+.next-button-container .next-button {
+  padding: 15px 20px;
+  background-color: #E94259;
+  color: white;
+  text-align: center;
+  border-radius: 10px;
+  font-weight: 700;
+}
+
+input[type=submit] {
+  padding: 15px 20px;
+  background-color: #E94259;
+  color: white;
+  text-align: center;
+  border-radius: 10px;
+  font-weight: 700;
+  width: 100%;
+  display: block;
 }
 
 /*# sourceMappingURL=choose-a-plan.css.map */

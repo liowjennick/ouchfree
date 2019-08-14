@@ -18,6 +18,26 @@ li
     position: relative
     padding-bottom: 42px // height of footer
 
+.choose-a-plan-container
+    padding-top: 54px // height of header
+    .header
+        position: fixed
+        top: 0
+        left: 0
+        width: 100%
+        padding: 20px
+        background-color: #E94259
+        display: flex
+        align-items: center
+        z-index: 10
+        .header-text
+            color: white
+            flex-grow: 1
+            font-weight: 600
+        .header-close-button
+            color: white
+            font-weight: 900
+
 .yellow-border
     width: 80px
     margin: 20px auto
@@ -144,17 +164,7 @@ li
                 .total-cost-text
                     flex-grow: 1
 
-    .next-button-container
-        padding: 0 20px
-        .next-button
-            padding: 15px 20px
-            background-color: #E94259
-            color: white
-            text-align: center
-            border-radius: 10px
-            font-weight: 700
-
-.step-3
+.step-3, .step-4
     form
         padding: 0 20px
     .radio-field-container
@@ -194,7 +204,9 @@ li
                         border-radius: 50%
 
     .form-field-container
+        margin-bottom: 20px
         .form-name
+            margin-bottom: 5px
             .small-text
                 font-weight: 100
                 font-size: 0.7em
@@ -210,5 +222,48 @@ li
                 width: 100%
                 box-shadow: none
                 border: none
-                padding: 10px
+                padding: 10px 20px
+                font-weight: 100
+                margin-bottom: 5px
 
+    .gender-field-container
+        display: flex
+        align-items: center
+        margin-bottom: 20px
+        .button-container
+            margin-left: 20px
+            input[type="radio"]
+                display: none
+                &:checked + label
+                    background-color: #73EAB8
+                    color: white
+            label
+                border: 2px solid #73EAB8
+                padding: 10px 20px
+                border-radius: 20px
+                color: #73EAB8
+                text-align: center
+                margin: 5px
+                background-color: white
+                cursor: pointer
+
+
+.next-button-container
+    padding: 0 20px
+    .next-button
+        padding: 15px 20px
+        background-color: #E94259
+        color: white
+        text-align: center
+        border-radius: 10px
+        font-weight: 700
+
+input[type="submit"]
+    padding: 15px 20px
+    background-color: #E94259
+    color: white
+    text-align: center
+    border-radius: 10px
+    font-weight: 700
+    width: 100%
+    display: block
