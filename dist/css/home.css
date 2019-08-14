@@ -7,9 +7,74 @@ img {
   max-width: 100%;
 }
 
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+li {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
 .page-container {
   position: relative;
   padding-bottom: 42px;
+}
+
+.navbar-container {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  z-index: 10000;
+  opacity: 0;
+  left: 100%;
+  transition: all 0.8s;
+}
+.navbar-container[data-show=true] {
+  left: 0%;
+  opacity: 1;
+}
+.navbar-container[data-show=true] .navbar-overlay {
+  opacity: 0.5;
+}
+.navbar-container ul a {
+  color: #212529;
+}
+.navbar-container ul li {
+  padding: 5px;
+}
+.navbar-container ul li.active {
+  color: #E94259;
+}
+.navbar-container .navbar-overlay {
+  width: 100%;
+  height: 100%;
+  background-color: grey;
+  opacity: 0;
+  transition: opacity 0.8s;
+}
+.navbar-container .navbar-list-container {
+  padding: 25px 40px 25px 25px;
+  background-color: white;
+  top: 0;
+  right: 0;
+  height: 100%;
+  position: absolute;
+}
+.navbar-container .navbar-list-container .small-list-item {
+  font-size: 0.7em;
+  font-weight: 100;
+}
+.navbar-container .navbar-list-container .navbar-footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
 
 .introduction-section {
