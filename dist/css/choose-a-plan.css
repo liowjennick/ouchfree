@@ -1,0 +1,257 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+li {
+  margin: 0;
+  padding: 0;
+}
+
+.page-container {
+  position: relative;
+  padding-bottom: 42px;
+}
+
+.yellow-border {
+  width: 80px;
+  margin: 20px auto;
+}
+
+.hairline-text {
+  font-weight: 100;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: #E94259;
+  color: white;
+  padding: 15px;
+  width: 100%;
+  font-size: 0.5em;
+  text-align: center;
+}
+
+.introduction {
+  padding: 20px;
+}
+.introduction .step {
+  color: #E94259;
+  font-weight: 600;
+}
+.introduction h5 {
+  margin-top: 5px;
+  margin-bottom: 0;
+}
+
+.step-1 .package-section {
+  padding: 20px;
+}
+.step-1 .package-section .package-list {
+  margin-bottom: 40px;
+}
+.step-1 .package-section .package-list > h5 {
+  color: #E94259;
+}
+.step-1 .package-section .package-item-card {
+  box-shadow: 0 0 15px 0 lightgray;
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.step-1 .package-section .package-item-card .package-benefits-line {
+  background-color: #333333;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+.step-1 .package-section .package-item-card .package-benefits-line h5 {
+  margin: 0;
+}
+.step-1 .package-section .package-item-card .package-details {
+  display: flex;
+  align-items: center;
+  font-size: 0.85em;
+  padding: 15px;
+}
+.step-1 .package-section .package-item-card .package-logo {
+  width: 60px;
+}
+.step-1 .package-section .package-item-card .package-logo img {
+  border-radius: 5px;
+}
+.step-1 .package-section .package-item-card .package-description {
+  margin-left: 15px;
+}
+.step-1 .package-section .package-item-card .package-description h5 {
+  margin-bottom: 5px;
+}
+.step-1 .package-section .package-item-card .package-description ul {
+  margin-bottom: 0;
+}
+.step-1 .package-section .package-item-card .package-price {
+  background-color: #73EAB8;
+  color: white;
+  padding: 15px;
+  position: relative;
+}
+.step-1 .package-section .package-item-card .package-price:after {
+  content: ">";
+  position: absolute;
+  right: 20px;
+}
+.step-1 .package-section .package-item-card .benefit-price {
+  background-color: #73EAB8;
+  color: white;
+  padding: 15px;
+  position: relative;
+  display: flex;
+}
+.step-1 .package-section .package-item-card .benefit-price .total-cost-text {
+  flex-grow: 1;
+}
+
+.step-2 .benefit-section {
+  padding: 0px 20px 20px 20px;
+}
+.step-2 .benefit-section .benefit-item-card {
+  box-shadow: 0 0 15px 0 lightgray;
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.step-2 .benefit-section .benefit-item-card .benefits-line {
+  background-color: #333333;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+.step-2 .benefit-section .benefit-item-card .benefits-line h5 {
+  margin: 0;
+}
+.step-2 .benefit-section .benefit-item-card .benefit-details {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+.step-2 .benefit-section .benefit-item-card .benefit-list {
+  padding: 10px;
+}
+.step-2 .benefit-section .benefit-item-card .benefit-item {
+  display: flex;
+  padding: 0;
+  align-items: center;
+}
+.step-2 .benefit-section .benefit-item-card .benefit-logo {
+  width: 60px;
+}
+.step-2 .benefit-section .benefit-item-card .benefit-logo img {
+  border-radius: 5px;
+}
+.step-2 .benefit-section .benefit-item-card .benefit-description {
+  margin-left: 15px;
+}
+.step-2 .benefit-section .benefit-item-card .benefit-description h5 {
+  margin-bottom: 5px;
+  font-size: 1.2em;
+}
+.step-2 .benefit-section .benefit-item-card .benefit-description ul {
+  margin-bottom: 0;
+}
+.step-2 .benefit-section .benefit-item-card .benefit-price {
+  background-color: #73EAB8;
+  color: white;
+  padding: 15px;
+  position: relative;
+  display: flex;
+}
+.step-2 .benefit-section .benefit-item-card .benefit-price .total-cost-text {
+  flex-grow: 1;
+}
+.step-2 .next-button-container {
+  padding: 0 20px;
+}
+.step-2 .next-button-container .next-button {
+  padding: 15px 20px;
+  background-color: #E94259;
+  color: white;
+  text-align: center;
+  border-radius: 10px;
+  font-weight: 700;
+}
+
+.step-3 form {
+  padding: 0 20px;
+}
+.step-3 .radio-field-container {
+  margin-bottom: 40px;
+}
+.step-3 .radio-field-container .radio-card {
+  box-shadow: 0 0 15px 0 lightgray;
+  position: relative;
+  border-radius: 5px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  padding: 15px 20px;
+  margin-bottom: 10px;
+}
+.step-3 .radio-field-container .radio-card h5 {
+  margin: 0;
+  flex-grow: 1;
+}
+.step-3 .radio-field-container .radio-card input[type=radio] {
+  -webkit-appearance: none !important;
+  width: 22px;
+  height: 22px;
+  cursor: pointer;
+  border: 3px solid lightgray;
+  border-radius: 50%;
+  position: relative;
+  outline: none;
+}
+.step-3 .radio-field-container .radio-card input[type=radio]:checked {
+  outline: none;
+}
+.step-3 .radio-field-container .radio-card input[type=radio]:checked:after {
+  content: "";
+  background-color: #73EAB8;
+  width: 14px;
+  height: 14px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+}
+.step-3 .form-field-container .form-name .small-text {
+  font-weight: 100;
+  font-size: 0.7em;
+  margin-left: 5px;
+  font-style: italic;
+}
+.step-3 .form-field-container .form-input-container input {
+  background-color: #FAFAFA;
+  outline: none;
+  border-radius: 5px;
+  overflow: hidden;
+  display: block;
+  width: 100%;
+  box-shadow: none;
+  border: none;
+  padding: 10px;
+}
+
+/*# sourceMappingURL=choose-a-plan.css.map */

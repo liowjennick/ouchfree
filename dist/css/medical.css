@@ -1,0 +1,143 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+li {
+  margin: 0;
+  padding: 0;
+}
+
+.page-container {
+  position: relative;
+  padding-bottom: 42px;
+}
+
+.yellow-border {
+  width: 80px;
+  margin: 20px auto;
+}
+
+.hairline-text {
+  font-weight: 100;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: #E94259;
+  color: white;
+  padding: 15px;
+  width: 100%;
+  font-size: 0.5em;
+  text-align: center;
+}
+
+.information-section {
+  padding: 25px;
+}
+.information-section h5 {
+  color: #E94259;
+  padding-bottom: 10px;
+  margin-bottom: 0;
+}
+.information-section .read-more-button {
+  color: white;
+  background-color: #E94259;
+  border-radius: 5px;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.package-section {
+  padding: 20px;
+}
+.package-section .package-list {
+  margin-bottom: 40px;
+}
+.package-section .package-list > h5 {
+  color: #E94259;
+}
+.package-section .package-item-card {
+  box-shadow: 0 0 15px 0 lightgray;
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.package-section .package-item-card .package-details {
+  display: flex;
+  align-items: center;
+  font-size: 0.85em;
+  padding: 15px;
+}
+.package-section .package-item-card .package-details .package-logo {
+  width: 60px;
+}
+.package-section .package-item-card .package-details .package-logo img {
+  border-radius: 5px;
+}
+.package-section .package-item-card .package-details .package-description {
+  margin-left: 15px;
+}
+.package-section .package-item-card .package-details .package-description h5 {
+  margin-bottom: 5px;
+}
+.package-section .package-item-card .package-details .package-description ul {
+  margin-bottom: 0;
+}
+.package-section .package-item-card .package-price {
+  background-color: #73EAB8;
+  color: white;
+  padding: 15px;
+  position: relative;
+}
+.package-section .package-item-card .package-price:after {
+  content: ">";
+  position: absolute;
+  right: 20px;
+}
+
+.faq-section h4 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.faq-section .faq-list .faq-item .faq-question {
+  border-bottom: 0.5px solid lightgrey;
+  padding-bottom: 20px;
+  padding-right: 20%;
+  cursor: pointer;
+  margin-top: 20px;
+}
+.faq-section .faq-list .faq-item .faq-answer {
+  height: 0px;
+  transition: 0.5s height;
+  overflow: hidden;
+}
+.faq-section .faq-list .faq-item .faq-answer p {
+  padding-top: 20px;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: #E94259;
+  color: white;
+  padding: 15px;
+  width: 100%;
+  font-size: 0.5em;
+  text-align: center;
+}
+
+/*# sourceMappingURL=medical.css.map */

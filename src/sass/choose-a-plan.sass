@@ -1,0 +1,214 @@
+body
+    margin: 0
+    padding: 0
+
+img
+    max-width: 100%
+
+ul
+    margin: 0
+    padding: 0
+    list-style: none
+
+li
+    margin: 0
+    padding: 0
+
+.page-container
+    position: relative
+    padding-bottom: 42px // height of footer
+
+.yellow-border
+    width: 80px
+    margin: 20px auto
+
+.hairline-text
+    font-weight: 100
+
+.footer
+    position: absolute
+    bottom: 0
+    left: 0
+    background-color: #E94259
+    color: white
+    padding: 15px
+    width: 100%
+    font-size: 0.5em
+    text-align: center
+
+.introduction
+    padding: 20px
+    .step
+        color: #E94259
+        font-weight: 600
+    h5
+        margin-top: 5px
+        margin-bottom: 0
+
+.step-1
+    .package-section
+        padding: 20px
+        .package-list
+            margin-bottom: 40px
+            > h5
+                color: #E94259
+        .package-item-card
+            box-shadow: 0 0 15px 0 lightgray
+            position: relative
+            border-radius: 10px
+            overflow: hidden
+            .package-benefits-line
+                background-color: #333333
+                color: white
+                text-align: center
+                padding: 10px
+                h5
+                    margin: 0
+            .package-details
+                display: flex
+                align-items: center
+                font-size: 0.85em
+                padding: 15px
+            .package-logo
+                width: 60px
+                img
+                    border-radius: 5px
+            .package-description
+                margin-left: 15px
+                h5
+                    margin-bottom: 5px
+                ul
+                    margin-bottom: 0
+            .package-price
+                background-color: #73EAB8
+                color: white
+                padding: 15px
+                position: relative
+                &:after
+                    content: '>'
+                    position: absolute
+                    right: 20px
+            .benefit-price
+                background-color: #73EAB8
+                color: white
+                padding: 15px
+                position: relative
+                display: flex
+                .total-cost-text
+                    flex-grow: 1
+
+.step-2
+    .benefit-section
+        padding: 0px 20px 20px 20px
+        .benefit-item-card
+            box-shadow: 0 0 15px 0 lightgray
+            position: relative
+            border-radius: 10px
+            overflow: hidden
+            .benefits-line
+                background-color: #333333
+                color: white
+                text-align: center
+                padding: 10px
+                h5
+                    margin: 0                
+            .benefit-details
+                display: flex
+                align-items: center
+                padding: 10px
+
+            .benefit-list
+                padding: 10px
+
+            .benefit-item
+                display: flex
+                padding: 0
+                align-items: center
+            .benefit-logo
+                width: 60px
+                img
+                    border-radius: 5px
+            .benefit-description
+                margin-left: 15px
+                h5
+                    margin-bottom: 5px
+                    font-size: 1.2em
+                ul
+                    margin-bottom: 0
+            .benefit-price
+                background-color: #73EAB8
+                color: white
+                padding: 15px
+                position: relative
+                display: flex
+                .total-cost-text
+                    flex-grow: 1
+
+    .next-button-container
+        padding: 0 20px
+        .next-button
+            padding: 15px 20px
+            background-color: #E94259
+            color: white
+            text-align: center
+            border-radius: 10px
+            font-weight: 700
+
+.step-3
+    form
+        padding: 0 20px
+    .radio-field-container
+        margin-bottom: 40px
+        .radio-card
+            box-shadow: 0 0 15px 0 lightgray
+            position: relative
+            border-radius: 5px
+            overflow: hidden
+            display: flex
+            align-items: center
+            padding: 15px 20px
+            margin-bottom: 10px
+            h5
+                margin: 0
+                flex-grow: 1
+            input[type="radio"]
+                -webkit-appearance: none !important
+                width: 22px
+                height: 22px
+                cursor: pointer
+                border: 3px solid lightgray
+                border-radius: 50%
+                position: relative
+                outline: none
+                &:checked
+                    outline: none
+                    &:after
+                        content: ''
+                        background-color: #73EAB8
+                        width: 14px
+                        height: 14px
+                        position: absolute
+                        top: 50%
+                        left: 50%
+                        transform: translate(-50%, -50%)
+                        border-radius: 50%
+
+    .form-field-container
+        .form-name
+            .small-text
+                font-weight: 100
+                font-size: 0.7em
+                margin-left: 5px
+                font-style: italic
+        .form-input-container
+            input
+                background-color: #FAFAFA
+                outline: none
+                border-radius: 5px
+                overflow: hidden
+                display: block
+                width: 100%
+                box-shadow: none
+                border: none
+                padding: 10px
+
