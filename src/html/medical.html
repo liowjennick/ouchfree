@@ -10,44 +10,79 @@
     <script src="../js/medical.js"></script>
   </head>
   <body>
-    <div class="page-container">
+    <div class="navbar-container" data-show="false">
+        <div class="navbar-overlay"></div>
+        <div class="navbar-list-container">
+            <div id="navbar-close-button">
+                <span>X</span>
+            </div>
+            <ul class="hairline-text">
+                <a href="home.html"><li>Home</li></a>
+                <a href="#"><li>About Us</li></a>
+                <a href="#"><li>Insurance</li></a>
+                <a href="#"><li class="small-list-item">Life</li></a>
+                <a href="medical.html"><li class="small-list-item active">Medical</li></a>
+                <a href="#"><li class="small-list-item">Fire/Home</li></a>
+                <a href="#"><li class="small-list-item">Motor</li></a>
+                <a href="#"><li class="small-list-item">Liabilities</li></a>
+                <a href="#"><li>FAQ</li></a>
+            </ul>
+
+            <div class="navbar-footer">
+                <ul class="hairline-text small-list-item">
+                    <a href="#"><li>Terms &amp; Condition</li></a>
+                    <a href="#"><li>Privacy Policy</li></a>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    <div class="page-container">        
+        <div id="navbar-icon">
+            <!-- <span class="fas fa-circle"></span> -->
+        </div>
+
         <div class="information-section">
-            <!-- TODO COPY CHANGE -->
-            <h5>About us</h5>
-            <h4>We're here to make getting insured less painful.</h4>
+            <h5>Insurance / Medical</h5>
+            <h4>
+                Sick of being sick?<br />
+                Medical insurance eliviates the burden of troublesome medical bills.
+            </h4>
             <p class="hairline-text">Don't let expensive hospital fees stop you from receiving the medical treatment you deserve. Ease your burden with a medical card that pays 100% of your medical bills. Have the convenience of cashless admissions and outpatient benefits at both government and provate hospitals</p>
         </div>
 
         <div class="package-section">
             <div class="package-list">
                 <h5>Medical Cards</h5>
-                <div class="package-item-container">
-                    <div class="package-item-card">
-                        <div class="package-details">
-                            <div class="package-logo">
-                                <img src="../assets/images/axa_logo.png">
+                <a href="details.html">
+                    <div class="package-item-container">
+                        <div class="package-item-card">
+                            <div class="package-details">
+                                <div class="package-logo">
+                                    <img src="../assets/images/axa_logo.png">
+                                </div>
+                                <div class="package-description">
+                                    <h5>AXA - eMedic</h5>
+                                    <ul>
+                                        <li>
+                                            <span class="hairline-text">Annual Limit: </span><b>up to RM100,000.<sup>00</sup></b>
+                                        </li>
+                                        <li>
+                                            <span class="hairline-text">Coverage Term: </span><b>up to age 80</b>
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
-                            <div class="package-description">
-                                <h5>AXA - eMedic</h5>
-                                <ul>
-                                    <li>
-                                        <span class="hairline-text">Annual Limit: </span><b>up to RM100,000.<sup>00</sup></b>
-                                    </li>
-                                    <li>
-                                        <span class="hairline-text">Coverage Term: </span><b>up to age 80</b>
-                                    </li>
-                                </ul>
+                            <div class="package-price">
+                                <b><sup class="hairline-text">from </sup>RM55.<sup class="hairline-text">99</sup>/ month</b>
                             </div>
-                        </div>
-                        <div class="package-price">
-                            <b><sup class="hairline-text">from </sup>RM55.<sup class="hairline-text">99</sup>/ month</b>
                         </div>
                     </div>
-                </div>
+                </a>
             </div>
 
             <div class="package-list">
-                <h5>Medical Cards</h5>
+                <h5>Other Medical Insurance</h5>
                 <div class="package-item-container">
                     <div class="package-item-card">
                         <div class="package-details">
@@ -55,13 +90,13 @@
                                 <img src="../assets/images/axa_logo.png">
                             </div>
                             <div class="package-description">
-                                <h5>AXA - eMedic</h5>
+                                <h5>AXA - CancerCare 200</h5>
                                 <ul>
                                     <li>
-                                        <span class="hairline-text">Annual Limit: </span><b>up to RM100,000.<sup>00</sup></b>
+                                        <span class="hairline-text">Annual Covered: </span><b>up to RM140,000.<sup>00</sup></b>
                                     </li>
                                     <li>
-                                        <span class="hairline-text">Coverage Term: </span><b>up to age 80</b>
+                                        <span class="hairline-text">Coverage Term: </span><b>20 years</b>
                                     </li>
                                 </ul>
                             </div>
@@ -82,18 +117,30 @@
                 <h4>Frequently Asked Questions</h4>
                 <div class="faq-list">
                     <div class="faq-item">
-                        <div class="faq-question hairline-text">Does medical insurance cover out-patient visits to the clinic</div>
+                        <div class="faq-question hairline-text">
+                            Does medical insurance cover out-patient visits to the clinic
+                            <div class="faq-down-caret"><span>x</span></div>
+                        </div>
                         <div class="faq-answer" data-expand="false">
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                         </div>
                     </div>
 
                     <div class="faq-item">
-                        <div class="faq-question hairline-text">Does medical insurance cover out-patient visits to the clinic</div>
+                        <div class="faq-question hairline-text">What happens if i lose my medical card?</div>
                         <div class="faq-answer" data-expand="false">
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                            <div class="faq-down-caret"><span>x</span></div>
                         </div>
-                    </div>    
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question hairline-text">What happens if i lose my medical card?</div>
+                        <div class="faq-answer" data-expand="false">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                            <div class="faq-down-caret"><span>x</span></div>
+                        </div>
+                    </div>
                 </div>
             </div>
 

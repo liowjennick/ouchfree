@@ -18,9 +18,88 @@ li {
   padding: 0;
 }
 
+a {
+  color: initial !important;
+  text-decoration: none !important;
+}
+
+#navbar-icon {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  font-size: 30px;
+  background-color: red;
+  z-index: 100;
+  cursor: pointer;
+}
+
+.navbar-container {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  z-index: 10000;
+  opacity: 0;
+  left: 100%;
+  transition: all 0.8s;
+}
+.navbar-container[data-show=true] {
+  left: 0%;
+  opacity: 1;
+}
+.navbar-container[data-show=true] .navbar-overlay {
+  opacity: 0.5;
+}
+.navbar-container ul a {
+  color: #212529;
+}
+.navbar-container ul li {
+  padding: 5px;
+}
+.navbar-container ul li.active {
+  color: #E94259;
+}
+.navbar-container .navbar-overlay {
+  width: 100%;
+  height: 100%;
+  background-color: grey;
+  opacity: 0;
+  transition: opacity 0.8s;
+}
+.navbar-container .navbar-list-container {
+  padding: 80px 40px 25px 25px;
+  background-color: white;
+  top: 0;
+  right: 0;
+  height: 100%;
+  position: absolute;
+}
+.navbar-container .navbar-list-container #navbar-close-button {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  color: #E94259;
+  padding: 0 10px;
+  cursor: pointer;
+}
+.navbar-container .navbar-list-container .small-list-item {
+  font-size: 0.7em;
+  font-weight: 100;
+}
+.navbar-container .navbar-list-container .navbar-footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+.navbar-container .navbar-list-container a {
+  text-decoration: none;
+}
+
 .page-container {
   position: relative;
   padding-bottom: 42px;
+  padding-top: 60px;
 }
 
 .yellow-border {
@@ -112,12 +191,23 @@ li {
   text-align: center;
   margin-bottom: 20px;
 }
+.faq-section .faq-list .faq-item {
+  position: relative;
+}
+.faq-section .faq-list .faq-item .faq-down-caret {
+  position: absolute;
+  right: 20px;
+  top: 15px;
+  transform: translateY(-50%);
+  color: #E94259;
+}
 .faq-section .faq-list .faq-item .faq-question {
   border-bottom: 0.5px solid lightgrey;
   padding-bottom: 20px;
   padding-right: 20%;
   cursor: pointer;
   margin-top: 20px;
+  cursor: pointer;
 }
 .faq-section .faq-list .faq-item .faq-answer {
   height: 0px;

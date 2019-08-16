@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "sass src/sass/medical.sass dist/css/medical.css && sass src/sass/home.sass dist/css/home.css && sass src/sass/choose-a-plan.sass dist/css/choose-a-plan.css"
+    "build": "sass src/sass/medical.sass dist/css/medical.css && sass src/sass/home.sass dist/css/home.css && sass src/sass/choose-a-plan.sass dist/css/choose-a-plan.css &&sass src/sass/home.sass dist/css/home.css && sass src/sass/details.sass dist/css/details.css"
   },
   "author": "",
   "license": "ISC"

@@ -5,21 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>OuchFree</title>
 
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="../../dist/css/home.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="../js/home.js"></script>
   </head>
   <body>
     <div class="page-container">
         <div class="navbar-container" data-show="false">
             <div class="navbar-overlay"></div>
             <div class="navbar-list-container">
-                <!-- TODO X icon -->
+                <div id="navbar-close-button">
+                    <span>X</span>
+                </div>
                 <ul class="hairline-text">
-                    <a href="#"><li class="active">Home</li></a>
+                    <a href="home.html"><li class="active">Home</li></a>
                     <a href="#"><li>About Us</li></a>
                     <a href="#"><li>Insurance</li></a>
                     <a href="#"><li class="small-list-item">Life</li></a>
-                    <a href="#"><li class="small-list-item">Medical</li></a>
+                    <a href="medical.html"><li class="small-list-item">Medical</li></a>
                     <a href="#"><li class="small-list-item">Fire/Home</li></a>
                     <a href="#"><li class="small-list-item">Motor</li></a>
                     <a href="#"><li class="small-list-item">Liabilities</li></a>
@@ -35,6 +39,10 @@
             </div>
         </div>
 
+        <div id="navbar-icon">
+            <!-- <span class="fas fa-circle"></span> -->
+        </div>
+
         <div class="introduction-section">
             <div class="introduction-bg"><img src="../assets/images/leg_bg.png"></div>
             <div class="introduction-content">
@@ -47,12 +55,55 @@
             <div class="cta-bg">
                 <img src="../assets/images/hand1_bg.png">
             </div>
-            <div class="cta-content">
+            <div class="cta-content" data-steps="1">
                 <h4>I'm looking to insure my</h2>
-                <div class="button-container">
-                    <div class="green-button">Vehicle</div>
-                    <div class="green-button">Health</div>
-                    <div class="green-button">Life</div>            
+                <div class="cta-step1">
+                    <div class="button-container">
+                        <div class="green-button">Vehicle</div>
+                        <div class="green-button">Health</div>
+                        <div class="green-button">Life</div>            
+                    </div>
+                </div>
+
+                <div class="cta-step2">
+                    <div class="cta-card">
+                        <div class="card-title">
+                            <h5>Health</h4>
+                            <div class="cta-close-button">
+                                X
+                            </div>
+                        </div>
+
+                        <div class="gender-field-container">
+                            <div class="form-name">
+                                <b>Gender</b>
+                            </div>
+                            <div class="button-container">
+                                <input type="radio" name="gender" value="Male" id="male">
+                                <label for="male">Male</label>
+        
+                                <input type="radio" name="gender" value="Female" id="female">
+                                <label for="female">Female</label>
+                            </div>
+                        </div>
+
+                        <div class="form-field-container">
+                            <div class="form-name">
+                                <b>Date of Birth</b><span class="small-text"></span>
+                            </div>
+        
+                            <!-- TODO -->
+                            <div class="form-input-container">
+                                <input type="text" name="fullname">
+                            </div>
+                        </div>
+    
+                        <div class="show-plans-button-container">
+                            <div class="show-plans-button">
+                                Show Plans
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

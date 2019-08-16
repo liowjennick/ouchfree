@@ -1,0 +1,237 @@
+body {
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+img {
+  max-width: 100%;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+li {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none !important;
+  color: initial !important;
+}
+
+.hairline-text {
+  font-weight: 100;
+}
+
+.small-text {
+  font-size: 0.8em;
+}
+
+.header-image {
+  height: 200px;
+  width: 100%;
+}
+.header-image img {
+  height: 100%;
+  width: 100%;
+}
+
+.page-container {
+  position: relative;
+  transform: translateY(-15px);
+  padding-bottom: 42px;
+}
+
+.detail-logo-container {
+  width: 55px;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-left: 25px;
+  margin-bottom: 15px;
+}
+
+.information-section {
+  padding: 0px 25px 25px 25px;
+}
+.information-section h5 {
+  color: #E94259;
+  padding-bottom: 10px;
+  margin-bottom: 0;
+}
+.information-section .read-more-button {
+  color: white;
+  background-color: #E94259;
+  border-radius: 5px;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.benefit-section {
+  padding: 0px 20px 20px 20px;
+}
+.benefit-section .benefit-item-card {
+  box-shadow: 0 0 15px 0 lightgray;
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.benefit-section .benefit-item-card .benefits-line {
+  background-color: #333333;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+.benefit-section .benefit-item-card .benefits-line h5 {
+  margin: 0;
+}
+.benefit-section .benefit-item-card .benefit-details {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+.benefit-section .benefit-item-card .benefit-list {
+  padding: 10px;
+}
+.benefit-section .benefit-item-card .benefit-item {
+  display: flex;
+  padding: 0;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.benefit-section .benefit-item-card .benefit-logo {
+  width: 60px;
+}
+.benefit-section .benefit-item-card .benefit-logo img {
+  border-radius: 5px;
+}
+.benefit-section .benefit-item-card .benefit-description {
+  margin-left: 15px;
+}
+.benefit-section .benefit-item-card .benefit-description h5 {
+  margin-bottom: 5px;
+  font-size: 1.2em;
+}
+.benefit-section .benefit-item-card .benefit-description ul {
+  margin-bottom: 0;
+}
+.benefit-section .benefit-item-card .benefit-price {
+  background-color: #FAFAFA;
+  padding: 15px;
+  position: relative;
+  display: flex;
+}
+.benefit-section .benefit-item-card .benefit-price .total-cost-text {
+  flex-grow: 1;
+  font-weight: 700;
+}
+.benefit-section .benefit-item-card .benefit-price .total-cost-price {
+  color: #73EAB8;
+}
+.benefit-section .gender-field-container {
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+  margin-top: 10px;
+}
+.benefit-section .gender-field-container .button-container {
+  margin-left: 10px;
+}
+.benefit-section .gender-field-container .button-container input[type=radio] {
+  display: none;
+}
+.benefit-section .gender-field-container .button-container input[type=radio]:checked + label {
+  background-color: #73EAB8;
+  color: white;
+}
+.benefit-section .gender-field-container .button-container label {
+  border: 2px solid #73EAB8;
+  padding: 5px 15px;
+  border-radius: 20px;
+  color: #73EAB8;
+  text-align: center;
+  margin: 5px;
+  background-color: white;
+  cursor: pointer;
+}
+
+.form-field-container {
+  margin-bottom: 10px;
+  padding: 10px 20px;
+}
+.form-field-container .form-name {
+  margin-bottom: 5px;
+}
+.form-field-container .form-name .small-text {
+  font-weight: 100;
+  font-size: 0.7em;
+  margin-left: 5px;
+  font-style: italic;
+}
+.form-field-container .form-input-container input {
+  background-color: #FAFAFA;
+  outline: none;
+  border-radius: 5px;
+  overflow: hidden;
+  display: block;
+  width: 100%;
+  box-shadow: none;
+  border: none;
+  padding: 10px 20px;
+  font-weight: 100;
+  margin-bottom: 5px;
+}
+
+.show-plans-button-container .show-plans-button {
+  padding: 15px 20px;
+  background-color: #E94259;
+  color: white;
+  text-align: center;
+  font-weight: 700;
+}
+
+.yellow-border {
+  width: 80px;
+  margin: 20px auto;
+}
+
+.documents-section h4 {
+  text-align: center;
+}
+.documents-section ul {
+  padding: 0 20px;
+}
+.documents-section ul a {
+  color: inherit;
+  text-decoration: none;
+}
+.documents-section ul li {
+  cursor: pointer;
+  padding: 20px 0;
+  border-bottom: 0.5px solid lightgrey;
+  display: flex;
+  align-items: center;
+}
+.documents-section ul li img {
+  width: 30px;
+  margin-right: 10px;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: #E94259;
+  color: white;
+  padding: 15px;
+  width: 100%;
+  font-size: 0.5em;
+  text-align: center;
+}
+
+/*# sourceMappingURL=details.css.map */

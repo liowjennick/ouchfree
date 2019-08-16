@@ -1,4 +1,16 @@
 window.addEventListener('DOMContentLoaded', () => {
+    document.getElementById('navbar-icon').addEventListener('click', () => {
+        if (document.querySelector('.navbar-container').dataset.show === 'false') {
+            document.querySelector('.navbar-container').dataset.show = 'true'
+        } else {
+            document.querySelector('.navbar-container').dataset.show = 'false'
+        }
+    })
+
+    document.getElementById('navbar-close-button').addEventListener('click', () => {
+        document.querySelector('.navbar-container').dataset.show = 'false'
+    })
+
     document.querySelectorAll('.faq-question').forEach(question => {
         question.addEventListener('click', (event) => {
             if (event.srcElement.nextElementSibling.dataset.expand === 'false') {
