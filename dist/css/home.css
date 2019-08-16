@@ -202,9 +202,9 @@ a {
 }
 .introduction-section .introduction-content {
   position: absolute;
-  top: 0;
+  top: 50%;
   left: 50%;
-  transform: translate(-50%, 130%);
+  transform: translate(-50%, -50%);
 }
 .introduction-section .introduction-content p {
   text-align: center;
