@@ -14,12 +14,30 @@ li
     margin: 0
     padding: 0
 
+a
+    color: initial !important
+    text-decoration: none !important
+    outline: none !important
+
 .page-container
     position: relative
     padding-bottom: 42px // height of footer
 
-.choose-a-plan-container
-    padding-top: 54px // height of header
+.progress-slider-container
+    display: flex
+    width: 100%
+    height: 5px
+    position: fixed
+    top: 66px // height of header plus slight spacing
+    .progress-slider
+        flex: 1
+        background-color: #F5F5F5
+        margin: 0 1px
+        &.active
+            background-color: #CCCCCC
+
+#choose-a-plan-container
+    padding-top: 70px // height of header + progress slider
     .header
         position: fixed
         top: 0
@@ -28,8 +46,11 @@ li
         padding: 20px
         background-color: #E94259
         display: flex
+        flex-direction: row
         align-items: center
         z-index: 10
+        .header-top
+            display: flex
         .header-text
             color: white
             flex-grow: 1
@@ -213,6 +234,11 @@ li
                 margin-left: 5px
                 font-style: italic
         .form-input-container
+            display: flex
+            align-items: center
+            .form-name
+                margin-right: 20px
+                font-weight: 700
             input
                 background-color: #FAFAFA
                 outline: none
@@ -266,3 +292,4 @@ input[type="submit"]
     font-weight: 700
     width: 100%
     display: block
+    margin-top: 20px

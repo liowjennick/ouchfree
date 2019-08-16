@@ -5,24 +5,30 @@
 
     <link rel="stylesheet" type="text/css" href="../../dist/css/choose-a-plan.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="../js/choose-a-plan.js"></script>
 </head>
     
 <body>
-    <div class="page-container choose-a-plan-container">
+    <div class="page-container" id="choose-a-plan-container">
         <div class="header">
             <div class="header-text">
                 Recommended For You
             </div>
-            <!-- TODO -->
-            <div class="header-close-button">
-                <!-- TODO ICON -->
-                X
-            </div>
-            <!-- TODO SLIDER PROGRESS -->
+            <a href="home.html">
+                <div class="header-close-button">
+                    X
+                </div>
+            </a>
+        </div>
+        <div class="progress-slider-container">
+            <template v-for="i in 7">
+                <div class="progress-slider" :class="{ active: step === i }"></div>
+            </template>
         </div>
 
         <!-- TODO BADGE -->
-        <!-- <div class="step-1">
+        <div class="step-1" v-if="step === 1">
             <div class="introduction">
                 <span class="step">Step 1 </span><span class="hairline-text">Choose a plan</span>
                 <h5>Our selection of medical insurance plans help you eliviate the burden of troublesome medical bills.</h5>
@@ -32,7 +38,7 @@
                 <div class="package-list">
                     <h5>Medical Cards</h5>
                     <div class="package-item-container">
-                        <div class="package-item-card">
+                        <div class="package-item-card" @click="step = 2">
                             <div class="package-details">
                                 <div class="package-logo">
                                     <img src="../assets/images/axa_logo.png">
@@ -56,10 +62,10 @@
                     </div>
                 </div>
             </div>
-        </div>             -->
+        </div>            
 
         <!-- TOOD BADGE AND LIST -->
-        <!-- <div class="step-2">
+        <div class="step-2" v-if="step === 2">
             <div class="introduction">
                 <span class="step">Step 2 </span><span class="hairline-text">Plan overview</span>
             </div>
@@ -110,12 +116,12 @@
                 </div>
             </div>
 
-            <div class="next-button-container">
+            <div class="next-button-container" @click="step = 3">
                 <div class="next-button">Next</div>
             </div>
-        </div>                 -->
+        </div>                
 
-        <!-- <div class="step-3">
+        <div class="step-3" v-if="step === 3">
             <div class="introduction">
                 <span class="step">Step 3 </span><span class="hairline-text">Personal details</span>
                 <h5>Let's get to know you a little better.</h5>
@@ -169,10 +175,10 @@
                 <div class="form-field-container">
                     <div class="form-name">
                         <b>Date of Birth</b><span class="small-text"></span>
-                    </div> -->
+                    </div>
 
                     <!-- TODO -->
-                    <!-- <div class="form-input-container">
+                    <div class="form-input-container">
                         <input type="text" name="fullname">
                     </div>
                 </div>
@@ -181,20 +187,20 @@
                     <div class="form-name">
                         <b>Country of Origin</b><span class="small-text"></span>
                     </div>
- -->
+
                     <!-- TODO -->
-                    <!-- <div class="form-input-container">
+                    <div class="form-input-container">
                         <input type="text" name="fullname">
                     </div>
                 </div>
             </form>
 
-            <div class="next-button-container">
+            <div class="next-button-container" @click="step = 4">
                 <div class="next-button">Next</div>
             </div>
         </div>
- -->
-        <div class="step-4">
+
+        <div class="step-4" v-if="step === 4">
             <div class="introduction">
                 <span class="step">Step 4 </span><span class="hairline-text">Contact Details</span>
                 <h5>These fields are required in order to mail your policy</h5>
@@ -234,7 +240,17 @@
                         <input type="text" name="address2">
                     </div>
 
-                    <input type="submit" value="Submit">
+
+                    <div class="form-input-container">
+                        <input type="text" name="address2">
+                    </div>
+
+                    <div class="form-input-container">
+                        <div class="form-name">Postcode</div>
+                        <input type="text" name="address2">
+                    </div>
+
+                    <input type="submit" value="Submit" @click="submitForm">
                 </div>
             </form>
         </div>
