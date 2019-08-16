@@ -29,6 +29,10 @@ a {
   padding-bottom: 42px;
 }
 
+.small-text {
+  font-size: 0.8em;
+}
+
 .progress-slider-container {
   display: flex;
   width: 100%;
@@ -40,6 +44,7 @@ a {
   flex: 1;
   background-color: #F5F5F5;
   margin: 0 1px;
+  cursor: pointer;
 }
 .progress-slider-container .progress-slider.active {
   background-color: #CCCCCC;
@@ -120,6 +125,7 @@ a {
   position: relative;
   border-radius: 10px;
   overflow: hidden;
+  cursor: pointer;
 }
 .step-1 .package-section .package-item-card .package-benefits-line {
   background-color: #333333;
@@ -202,6 +208,7 @@ a {
 .step-2 .benefit-section .benefit-item-card .benefit-item {
   display: flex;
   padding: 0;
+  margin-bottom: 5px;
   align-items: center;
 }
 .step-2 .benefit-section .benefit-item-card .benefit-logo {
@@ -336,6 +343,7 @@ a {
 
 .next-button-container {
   padding: 0 20px;
+  cursor: pointer;
 }
 .next-button-container .next-button {
   padding: 15px 20px;

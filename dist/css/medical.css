@@ -196,6 +196,7 @@ a {
 }
 .faq-section .faq-list .faq-item .faq-down-caret {
   position: absolute;
+  width: 20px;
   right: 20px;
   top: 15px;
   transform: translateY(-50%);

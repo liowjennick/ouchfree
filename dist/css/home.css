@@ -30,12 +30,10 @@ a {
 
 #navbar-icon {
   width: 30px;
-  height: 30px;
   position: absolute;
   right: 10px;
   top: 10px;
   font-size: 30px;
-  background-color: red;
   z-index: 100;
   cursor: pointer;
 }
@@ -273,6 +271,34 @@ a {
   width: 100px;
   top: 20px;
   right: 0px;
+}
+.contact-us-section .social-media-buttons-container {
+  display: flex;
+  margin-top: 20px;
+}
+.contact-us-section .social-media-buttons-container .facebook-button {
+  width: 30px;
+  height: 30px;
+  padding: 1px 5px;
+  border-radius: 50%;
+  background-color: #125CA8;
+  margin-right: 6px;
+}
+.contact-us-section .social-media-buttons-container .twitter-button {
+  width: 30px;
+  height: 30px;
+  padding: 1px 5px;
+  border-radius: 50%;
+  background-color: #3B98D1;
+  margin-right: 6px;
+}
+.contact-us-section .social-media-buttons-container .instagram-button {
+  width: 30px;
+  height: 30px;
+  padding: 1px 5px;
+  border-radius: 50%;
+  background-color: #E94259;
+  margin-right: 6px;
 }
 
 .partners-section {
