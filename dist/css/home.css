@@ -100,7 +100,7 @@ a {
 }
 
 .show-plans-button-container {
-  padding: 0 20px;
+  padding: 0 20px 10px 20px;
   margin-bottom: 10px;
 }
 .show-plans-button-container .show-plans-button {
@@ -123,7 +123,6 @@ a {
   box-shadow: 0 0 15px 0 lightgray;
   position: relative;
   border-radius: 10px;
-  overflow: hidden;
   background-color: white;
 }
 .cta-card .card-title {
@@ -132,6 +131,7 @@ a {
   color: white;
   overflow: hidden;
   position: relative;
+  border-radius: 10px 10px 0 0;
 }
 .cta-card .card-title h5 {
   margin: 0 0 0 10px;
@@ -170,6 +170,9 @@ a {
   background-color: white;
   cursor: pointer;
 }
+.cta-card .vdp-datepicker {
+  width: 100%;
+}
 .cta-card .form-field-container {
   margin-bottom: 10px;
   padding: 10px 20px;
@@ -182,6 +185,15 @@ a {
   font-size: 0.7em;
   margin-left: 5px;
   font-style: italic;
+}
+.cta-card .form-field-container .form-input-container {
+  position: relative;
+}
+.cta-card .form-field-container .form-input-container .icon {
+  position: absolute;
+  width: 30px;
+  right: 10px;
+  top: 8px;
 }
 .cta-card .form-field-container .form-input-container input {
   background-color: #FAFAFA;

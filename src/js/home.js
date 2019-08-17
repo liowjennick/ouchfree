@@ -1,4 +1,17 @@
 window.addEventListener('DOMContentLoaded', () => {
+    var app = new Vue({
+        el: '#homepage-container',
+        name: 'homepage',
+        components: {
+            vuejsDatepicker
+        },
+        data () {
+            return {
+                dateOfBirth: new Date(2016, 9, 16)
+            }
+        }
+    })
+
     document.getElementById('navbar-icon').addEventListener('click', () => {
         if (document.querySelector('.navbar-container').dataset.show === 'false') {
             document.querySelector('.navbar-container').dataset.show = 'true'

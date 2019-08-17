@@ -5,13 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>OuchFree</title>
 
-    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="../../dist/css/home.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="https://unpkg.com/vuejs-datepicker"></script>
     <script src="../js/home.js"></script>
   </head>
   <body>
-    <div class="page-container">
+    <div class="page-container" id="homepage-container">
         <div class="navbar-container" data-show="false">
             <div class="navbar-overlay"></div>
             <div class="navbar-list-container">
@@ -50,7 +51,7 @@
                 <p>Getting insured shouldn't be a pain in the ass.</p>
             </div>
         </div>
-    <!-- TODO CROP IMAGE -->
+
         <div class="cta-section">
             <div class="cta-bg">
                 <img src="../assets/images/hand1_bg.png">
@@ -92,9 +93,9 @@
                                 <b>Date of Birth</b><span class="small-text"></span>
                             </div>
         
-                            <!-- TODO -->
                             <div class="form-input-container">
-                                <input type="text" name="fullname">
+                                <vuejs-datepicker v-model="dateOfBirth"></vuejs-datepicker>
+                                <img class="icon" src="https://image.flaticon.com/icons/png/512/42/42446.png">
                             </div>
                         </div>
     

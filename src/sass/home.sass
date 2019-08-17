@@ -82,7 +82,7 @@ a
             text-decoration: none
 
 .show-plans-button-container
-    padding: 0 20px
+    padding: 0 20px 10px 20px
     margin-bottom: 10px
     .show-plans-button
         padding: 15px 20px
@@ -104,7 +104,6 @@ a
     box-shadow: 0 0 15px 0 lightgray
     position: relative
     border-radius: 10px
-    overflow: hidden
     background-color: white
     .card-title
         background-color: #73EAB8
@@ -112,6 +111,7 @@ a
         color: white
         overflow: hidden
         position: relative
+        border-radius: 10px 10px 0 0
         h5
             margin: 0 0 0 10px
         .cta-close-button
@@ -144,6 +144,9 @@ a
                 background-color: white
                 cursor: pointer
 
+    .vdp-datepicker
+        width: 100%
+
     .form-field-container
         margin-bottom: 10px
         padding: 10px 20px
@@ -155,6 +158,12 @@ a
                 margin-left: 5px
                 font-style: italic
         .form-input-container
+            position: relative
+            .icon
+                position: absolute
+                width: 30px
+                right: 10px
+                top: 8px
             input
                 background-color: #FAFAFA
                 outline: none
