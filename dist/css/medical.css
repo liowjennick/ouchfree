@@ -25,12 +25,10 @@ a {
 
 #navbar-icon {
   width: 30px;
-  height: 30px;
   position: absolute;
   right: 10px;
   top: 10px;
   font-size: 30px;
-  background-color: red;
   z-index: 100;
   cursor: pointer;
 }

@@ -8,5 +8,8 @@
     "build": "sass src/sass/medical.sass dist/css/medical.css && sass src/sass/home.sass dist/css/home.css && sass src/sass/choose-a-plan.sass dist/css/choose-a-plan.css &&sass src/sass/home.sass dist/css/home.css && sass src/sass/details.sass dist/css/details.css"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "vuejs-datepicker": "^1.6.2"
+  }
 }

@@ -241,7 +241,32 @@ a
                 font-style: italic
         .form-input-container
             display: flex
+            position: relative
             align-items: center
+            select
+                appearance: none
+                -webkit-appearance: none
+                background-color: #FAFAFA
+                outline: none
+                border-radius: 5px
+                overflow: hidden
+                display: block
+                width: 100%
+                box-shadow: none
+                border: none
+                padding: 10px 20px
+                font-weight: 100
+                margin-bottom: 5px
+            .down-caret
+                position: absolute
+                width: 25px
+                right: 10px
+                top: 12px
+            .icon
+                position: absolute
+                width: 30px
+                right: 10px
+                top: 8px
             .form-name
                 margin-right: 20px
                 font-weight: 700
@@ -278,6 +303,9 @@ a
                 margin: 5px
                 background-color: white
                 cursor: pointer
+
+.vdp-datepicker
+    width: 100%
 
 .next-button-container
     padding: 0 20px

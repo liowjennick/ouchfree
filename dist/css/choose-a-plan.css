@@ -296,7 +296,35 @@ a {
 }
 .step-3 .form-field-container .form-input-container, .step-4 .form-field-container .form-input-container {
   display: flex;
+  position: relative;
   align-items: center;
+}
+.step-3 .form-field-container .form-input-container select, .step-4 .form-field-container .form-input-container select {
+  appearance: none;
+  -webkit-appearance: none;
+  background-color: #FAFAFA;
+  outline: none;
+  border-radius: 5px;
+  overflow: hidden;
+  display: block;
+  width: 100%;
+  box-shadow: none;
+  border: none;
+  padding: 10px 20px;
+  font-weight: 100;
+  margin-bottom: 5px;
+}
+.step-3 .form-field-container .form-input-container .down-caret, .step-4 .form-field-container .form-input-container .down-caret {
+  position: absolute;
+  width: 25px;
+  right: 10px;
+  top: 12px;
+}
+.step-3 .form-field-container .form-input-container .icon, .step-4 .form-field-container .form-input-container .icon {
+  position: absolute;
+  width: 30px;
+  right: 10px;
+  top: 8px;
 }
 .step-3 .form-field-container .form-input-container .form-name, .step-4 .form-field-container .form-input-container .form-name {
   margin-right: 20px;
@@ -339,6 +367,10 @@ a {
   margin: 5px;
   background-color: white;
   cursor: pointer;
+}
+
+.vdp-datepicker {
+  width: 100%;
 }
 
 .next-button-container {
