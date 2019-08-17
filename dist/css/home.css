@@ -218,6 +218,11 @@ a {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+@media screen and (min-width: 500px) {
+  .introduction-section .introduction-content {
+    top: 45%;
+  }
+}
 .introduction-section .introduction-content p {
   text-align: center;
   width: 190px;

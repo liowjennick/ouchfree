@@ -111,6 +111,13 @@ a {
   margin-bottom: 0;
 }
 
+.package-badge {
+  position: absolute;
+  width: 50px;
+  right: 10px;
+  top: -10px;
+}
+
 .step-1 .package-section {
   padding: 20px;
 }
@@ -124,7 +131,6 @@ a {
   box-shadow: 0 0 15px 0 lightgray;
   position: relative;
   border-radius: 10px;
-  overflow: hidden;
   cursor: pointer;
 }
 .step-1 .package-section .package-item-card .package-benefits-line {
@@ -162,6 +168,7 @@ a {
   color: white;
   padding: 15px;
   position: relative;
+  border-radius: 0 0 10px 10px;
 }
 .step-1 .package-section .package-item-card .package-price:after {
   content: ">";
@@ -186,7 +193,6 @@ a {
   box-shadow: 0 0 15px 0 lightgray;
   position: relative;
   border-radius: 10px;
-  overflow: hidden;
 }
 .step-2 .benefit-section .benefit-item-card .benefits-line {
   background-color: #333333;
@@ -233,6 +239,7 @@ a {
   padding: 15px;
   position: relative;
   display: flex;
+  border-radius: 0 0 10px 10px;
 }
 .step-2 .benefit-section .benefit-item-card .benefit-price .total-cost-text {
   flex-grow: 1;
