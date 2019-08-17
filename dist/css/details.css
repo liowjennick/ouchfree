@@ -160,6 +160,10 @@ a {
   cursor: pointer;
 }
 
+.vdp-datepicker {
+  width: 100%;
+}
+
 .form-field-container {
   margin-bottom: 10px;
   padding: 10px 20px;
@@ -173,6 +177,9 @@ a {
   margin-left: 5px;
   font-style: italic;
 }
+.form-field-container .form-input-container {
+  position: relative;
+}
 .form-field-container .form-input-container input {
   background-color: #FAFAFA;
   outline: none;
@@ -185,6 +192,12 @@ a {
   padding: 10px 20px;
   font-weight: 100;
   margin-bottom: 5px;
+}
+.form-field-container .form-input-container .icon {
+  position: absolute;
+  width: 30px;
+  right: 10px;
+  top: 8px;
 }
 
 .show-plans-button-container .show-plans-button {
