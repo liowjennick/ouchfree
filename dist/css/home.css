@@ -26,6 +26,8 @@ a {
 .page-container {
   position: relative;
   padding-bottom: 42px;
+  max-width: 750px;
+  margin: 0 auto;
 }
 
 #navbar-icon {
@@ -256,6 +258,13 @@ a {
   margin: 5px;
   background-color: white;
   cursor: pointer;
+}
+@media screen and (min-width: 400px) {
+  .cta-section .cta-bg > img {
+    width: 50%;
+    margin: 0 auto;
+    display: block;
+  }
 }
 
 .about-us-section {

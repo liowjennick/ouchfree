@@ -21,7 +21,8 @@ a
 .page-container
     position: relative
     padding-bottom: 42px // height of footer
-
+    max-width: 750px
+    margin: 0 auto
 #navbar-icon
     width: 30px
     position: absolute
@@ -214,6 +215,12 @@ a
                 margin: 5px
                 background-color: white
                 cursor: pointer
+    .cta-bg
+        > img
+            @media screen and (min-width: 400px)
+                width: 50%
+                margin: 0 auto
+                display: block
 
 .about-us-section
     padding: 25px
